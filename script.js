@@ -4,12 +4,12 @@ function game(){
     }
 
     function getComputerChoise(){
-     let random_szam = getRandomInt(3);
-        if (random_szam === 0)
+     let random_num = getRandomInt(3);sss
+        if (random_num === 0)
         {
             return "rock";
         }
-        else if(random_szam === 1)
+        else if(random_num === 1)
         {   
             return "scissors";
         }
@@ -22,14 +22,14 @@ function game(){
     function oneRoundGame(playerSelection, computerSelection){
         if (computerSelection == playerSelection)
         {
-            return "The game is draw"
+            return "The game is draw";
         }
         else if ((computerSelection == "scissors" && playerSelection == "rock") ||
                 (computerSelection == "rock" && playerSelection == "paper") ||
                 (computerSelection == "paper" && playerSelection == "scissors")
                                                                 )
         {   
-            return "you win";
+            return "You win";
         }
         else if ((computerSelection == "rock" && playerSelection == "scissors") ||
                 (computerSelection == "paper" && playerSelection == "rock") ||
@@ -39,7 +39,7 @@ function game(){
             return "You lose";
         }
     }
-    let playerChoise = prompt("Choose a sign")
+    let playerChoise = prompt("Choose a sign");
     return oneRoundGame(playerChoise, getComputerChoise());
 
 }
@@ -48,8 +48,8 @@ function gameloop(){
     let i = 0;
     while (i < 5)
     {
-    let eredmeny = game();
-    console.log(eredmeny)
+    let result = game();
+    console.log(result)
     i++;
     }
 
