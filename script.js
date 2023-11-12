@@ -4,7 +4,7 @@ function game(){
     }
 
     function getComputerChoise(){
-     let random_num = getRandomInt(3);sss
+     let random_num = getRandomInt(3);
         if (random_num === 0)
         {
             return "rock";
